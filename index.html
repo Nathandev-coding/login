@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<style>
+    #inscription{
+        
+       
+        display: none;
+        opacity: 0;
+        transform: opacity 1s ease-in-out;
+        
+    }
+    #connexion{
+        display: block;
+        transition: all 5s ease-in-out;
+        transform: opacity 1s ease-in-out;
+    }
+   
+   
+
+</style>
+<body>
+    <section class="d-flex justify-content-center align-items-center w-100 min-vh-100" style="background: linear-gradient(to bottom, black,rgb(29, 27, 27),rgb(0, 204, 255));">
+        <div class="container d-flex justify-content-center align-items-center text-center" id="form">
+            <div class="connexion" id="connexion">
+
+                <!----------logo du formulaire---->
+            <div class="image mb-3">
+                <img src="logo.jpg" alt="" class="img-fluid" width="100" height="100" style="border-radius: 99px;">
+            </div>
+            <!------------card  qui contient le formulaire---->
+            <div class="card " style="background-color: white;">
+                <div class="card-body d-flex align-items-center justify-content-center  text-center" >
+                    <form action="" class="">
+
+                        <!-----------titre du formulaire----->
+                        <div class="text">
+                            <h4 style="color:rgb(0, 204, 255);">se connecter</h4>
+                        </div>
+
+
+                        <!------------champs pour email-->
+                        <div class="mb-3">
+                            <input type="mail" class="form-control " placeholder="email">
+                        </div>
+                        <!------------champs pour moot de passe-->
+                        <div class="mb-3">
+                            <input type="password" class="form-control " placeholder="Mot de passe">
+                        </div>
+
+                        <!------------button de soumision-->
+                        <div class="mb-3">
+                            <button type="submit" class="btn d-block w-100 text-white" style="background-color: rgb(0, 204, 255);font-weight: bold;">se connecter</button>
+                            <p>vous avez pas un compte? <a href="#" onclick="afficheInscription()">creez</a></p>
+                        </div>
+                        <div class="mb-1 d-flex">
+
+                            <p>_________________</p>
+                            <span>  ou  </span>
+                            <p>  ________________</p>
+                        </div>
+
+                        <!------------connexion avec google-->
+                            <div class="col-md-12 mb-3">
+                                <a href="#" class="nav-link">
+                                    <div class="card border-info" style="cursor: pointer;">
+                                        <div class="card-body">
+                                            <img src="google.png" width="20" alt="">
+                                            se connecter avec google
+                                        </div>
+    
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <!------------connexion avec github-------->
+                            <div class="col-md-12 mb-3">
+                                <a href="#" class="nav-link">
+                                    <div class="card border-info" style="cursor: pointer;">
+                                        <div class="card-body">
+                                            <img src="github.png" width="20" alt="">
+                                            se connecter avec github
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!---------connexion avecc instagram------->
+
+                            <div class="col-md-12 ">
+                                <a href="#" class="nav-link">
+                                    <div class="card border-info" style="cursor: pointer;">
+                                        <div class="card-body">
+                                            <img src="insta.png" width="20" alt="">
+                                            se connecter avec instagram
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                           
+                            
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="inscription" id="inscription" >
+
+            <!----------logo du formulaire---->
+        <div class="image mb-3">
+            <img src="logo.jpg" alt="" class="img-fluid" width="100" height="100" style="border-radius: 99px;">
+        </div>
+        <!------------card  qui contient le formulaire---->
+        <div class="card " style="background-color: white;">
+            <div class="card-body d-flex align-items-center justify-content-center  text-center" >
+                <form action="" class="">
+
+                    <!-----------titre du formulaire----->
+                    <div class="text">
+                        <h4 style="color:rgb(0, 204, 255);">inscrivez-vous</h4>
+                    </div>
+
+
+                    <!------------champs pour email-->
+                    <div class="mb-3">
+                        <input type="text" class="form-control " placeholder="nom">
+                    </div>
+                    <!------------champs pour moot de passe-->
+                    <div class="mb-3">
+                        <input type="email" class="form-control " placeholder="email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control " placeholder="Mot de passe">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control " placeholder="confirme le mot de passe">
+                    </div>
+
+                    <!------------button de soumision-->
+                    <div class="mb-3">
+                        <button type="submit" class="btn d-block w-100 text-white" style="background-color: rgb(0, 204, 255);font-weight: bold;">inscription</button>
+                        <p >vous avez  un compte? <a href="#" onclick="afficheConnexion()">connectez-vous</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        </div>
+    </section>
+    <footer style="background-color: rgb(0, 204, 255);">
+        <div class="footer d-flex justify-content-center align-items-center">
+            <p>&copy;copyring 2024 |nathan tshimbalanga</p>
+
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
